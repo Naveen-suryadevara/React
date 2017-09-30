@@ -1,3 +1,5 @@
+import React from react
+
 const element = < h1 > Hello,
     everyone < /h1>
 
