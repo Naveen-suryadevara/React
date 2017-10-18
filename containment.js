@@ -1,4 +1,21 @@
 import react from './react';
+// .FancyBorder {
+//   padding: 10px 10px;
+//   border: 10px solid;
+// }
+
+// .FancyBorder-blue {
+//   border-color: blue;
+// }
+
+// .Note-title {
+//   margin: 0;
+//   font-family: sans-serif;
+// }
+
+// .Note-message {
+//   font-size: larger;
+// }
 function FancyBorder(props) {
     return (
       <div className={'FancyBorder FancyBorder-' + props.color}>
@@ -7,21 +24,16 @@ function FancyBorder(props) {
     );
   }
   
-  function WelcomeDialog() {
+  function WelcomeNote() {
     return (
-      <FancyBorder color="black">
-        <h1 className="Dialog-title">
-          Hello
+      <div style={{color:'green', padding: '8px 8px', border: '8px solid'}}>
+        <h1 style={{color:'black',margin: 0, font_family: 'sans-serif'}}>
+          Hi
         </h1>
-        <p className="Dialog-message">
-          How are you Doing!
+        <p style={{color:'black',font_size: 'medium'}}>
+          How are you doing!
         </p>
-      </FancyBorder>
+      </div>
     );
   }
-  
-  ReactDOM.render(
-    <WelcomeDialog />,
-    document.getElementById('root')
-  );
-export default WelcomeDialog;
+  export default WelcomeNote;

@@ -9,15 +9,17 @@ function FancyBorder(props) {
   
   function Note(props) {
     return (
-      <FancyBorder color="black">
-        <h1 className="Note-title">
-          {props.title}
+      <div style={{color:'green', padding: '8px 8px', border: '8px solid'}}>
+        <h1 style={{margin: 0, font_family: 'sans-serif'}}>
         </h1>
-        <p className="Note-message">
+        <p style={{color:'black'}}>
+          {props.title}
+        </p>
+        <p style={{color:'black'}}>
           {props.message}
         </p>
         {props.children}
-      </FancyBorder>
+        </div>
     );
   }
   
